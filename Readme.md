@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сергей Зуев](https://up.htmlacademy.ru/adaptive/17/user/859219).
-* Наставник: [Александр Бабченко] (https://up.htmlacademy.ru/adaptive/17/user/619357).
+* Наставник: [Александр Бабченко](https://up.htmlacademy.ru/adaptive/17/user/619357).
 
 ---
 
