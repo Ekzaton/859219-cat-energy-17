@@ -1,0 +1,27 @@
+@import "fonts.scss";
+@import "button.scss";
+@import "visually-hidden.scss";
+@import "page-header.scss";
+@import "nav-list.scss";
+@import "page-main.scss";
+@import "promos.scss";
+@import "promos-list.scss";
+@import "features.scss";
+@import "features-list.scss";
+@import "catalog.scss";
+@import "product.scss";
+@import "page-footer.scss";
+@import "social.scss";
+@import "copyright.scss";
+
+body {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+
+  margin: 0;
+  padding: 0;
+
+  color: #111111;
+  background-color: #ffffff;
+}

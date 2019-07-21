@@ -1,0 +1,29 @@
+.nav-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav-list__link {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111111;
+}
+
+.nav-list__link:focus,
+.nav-list__link:hover {
+  opacity: 0.6;
+}
+
+.nav-list__link:active {
+  opacity: 0.3;
+}
+
+.nav-list__link--active:focus,
+.nav-list__link--active:hover,
+.nav-list__link--active:active {
+  opacity: 1;
+}

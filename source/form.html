@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Интернет-магазин «Кэт энерджи»</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
@@ -15,13 +16,13 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list nav-list">
           <li class="nav-list__item">
-            <a href="index.html">Главная</a>
+            <a class="nav-list__link" href="index.html">Главная</a>
           </li>
           <li class="nav-list__item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a class="nav-list__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="nav-list__item nav-list__item--active">
-            <a>Подбор программы</a>
+          <li class="nav-list__item">
+            <a class="nav-list__link nav-list__link--active">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -82,7 +83,7 @@
           <input type="checkbox" id="check-4" name="add-products" value="vitamins">
           <label class="form-type form-type--check" for="check-4" tabindex="0">Витамины</label>
         </fieldset>
-        <button class="form__button button" type="submit">Отправить заявку</button>
+        <button class="button button--form" type="submit">Отправить заявку</button>
         <p class="form__note"><sup>*</sup>— Обязательные поля</p>
       </form>
 
@@ -96,30 +97,32 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3018653603821!2d30.32229561500552!3d59.93871741988314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1551466207556" allowfullscreen></iframe>
         </p>
       </div>
-      <a class="page-footer__logo" href="index.html">
-        <img class="page-footer__logo-image" src="img/logo-mobile-2.svg" width="128" height="24" alt="Логотип интернет-магазина «Кэт энерджи»">
-      </a>
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
-            <img class="social__icon" src="img/vk.svg" width="22" height="12" alt="Мы в ВК">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy">
-            <img class="social__icon" src="img/fb.svg" width="17" height="17" alt="Мы в Facebook">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--insta" href="https://www.instagram.com/htmlacademy">
-            <img class="social__icon" src="img/insta.svg" width="10" height="19" alt="Мы в Instagram">
-          </a>
-        </li>
-      </ul>
-      <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="copyright__title">HTML Academy</span>
-        <img class="copyright__logo-image" src="img/academy-logo.svg" width="27" height="34" alt="Логотип «HTML Academy»">
-      </a>
+      <div class="page-footer__bottom">
+        <a class="page-footer__logo">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип интернет-магазина «Кэт энерджи»">
+        </a>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
+              <img class="social__icon" src="../img/icon-vk.svg" width="22" height="12" alt="Мы в ВК">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--insta" href="https://www.instagram.com/htmlacademy">
+              <img class="social__icon" src="../img/icon-insta.svg" width="17" height="17" alt="Мы в Instagram">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy">
+              <img class="social__icon" src="../img/icon-fb.svg" width="10" height="19" alt="Мы в Facebook">
+            </a>
+          </li>
+        </ul>
+        <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="copyright__title">HTML Academy</span>
+          <img class="copyright__logo-image" src="../img/htmlacademy.svg" width="27" height="34" alt="Логотип «HTML Academy»">
+        </a>
+      </div>
     </footer>
 
   </body>
