@@ -10,20 +10,22 @@
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
-  color: #111111;
+  color: $main-font;
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
-.nav-list__link:focus,
-.nav-list__link:hover {
-  opacity: 0.6;
-}
-
-.nav-list__link:active {
-  opacity: 0.3;
-}
-
-.nav-list__link--active:focus,
-.nav-list__link--active:hover,
-.nav-list__link--active:active {
-  opacity: 1;
+.nav-list__link--active {
+  &:focus,
+  &:hover,
+  &:active {
+    opacity: 1;
+  }
 }

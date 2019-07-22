@@ -6,7 +6,7 @@
 }
 
 .promos-list__item {
-  background: #f2f2f2;
+  background: $add-background;
 }
 
 .promos-list__title {
@@ -20,18 +20,18 @@
 }
 
 .promos-list__desc {
-  font-family: "Arial", sans-serif;
+  font-family: $second-family;
   font-size: 14px;
   line-height: 1.29;
-  color: #444444;
+  color: $add-font;
 }
 
 .promos-list__link {
   text-transform: uppercase;
   text-decoration: none;
-  color: #111111;
-}
+  color: $main-font;
 
-.promos-list__link:active {
-  color: rgba(17, 17, 17, 0.3);
+  &:active {
+    color: rgba($main-font, 0.3);
+  }
 }

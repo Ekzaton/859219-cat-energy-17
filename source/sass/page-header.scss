@@ -1,8 +1,10 @@
-.page-header__logo:focus,
-.page-header__logo:hover {
-  opacity: 0.8;
-}
+.page-header__logo {
+  &:focus,
+  &:hover {
+    opacity: 0.8;
+  }
 
-.page-header__logo:active {
-  opacity: 0.6;
+  &:active {
+    opacity: 0.6;
+  }
 }
