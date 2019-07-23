@@ -1,0 +1,22 @@
+.page-footer {
+  background: $add-bgcolor;
+}
+
+.page-footer__logo {
+  &:focus,
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-footer__copyright {
+  text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+}

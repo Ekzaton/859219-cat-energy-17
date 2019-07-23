@@ -1,0 +1,35 @@
+.button {
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $button-fontcolor;
+  background: $button-bgcolor;
+
+  &:focus,
+  &:hover {
+    background: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba($button-fontcolor, 0.3);
+  }
+
+  &--promos {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  &--more {
+    color: $add-fontcolor;
+    background: $add-bgcolor;
+
+    &:focus,
+    &:hover {
+      background: #ebebeb;
+    }
+
+    &:active {
+      color: rgba($add-fontcolor, 0.3);
+    }
+  }
+}

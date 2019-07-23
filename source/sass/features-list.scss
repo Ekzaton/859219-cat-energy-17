@@ -1,0 +1,13 @@
+.features-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.features-list__desc {
+  font-family: $second-family;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $add-fontcolor;
+}
