@@ -5,9 +5,9 @@
   font-size: 36px;
   font-weight: normal;
   line-height: 1.67;
-}
 
-.page-main__title--promos {
-  line-height: 1;
-  color: $button-font;
+  &--promos {
+    line-height: 1;
+    color: $button-fontcolor;
+  }
 }

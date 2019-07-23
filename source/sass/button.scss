@@ -2,8 +2,8 @@
   line-height: 1.25;
   text-transform: uppercase;
   text-decoration: none;
-  color: $button-font;
-  background: $button-background;
+  color: $button-fontcolor;
+  background: $button-bgcolor;
 
   &:focus,
   &:hover {
@@ -11,25 +11,25 @@
   }
 
   &:active {
-    color: rgba($button-font, 0.3);
-  }
-}
-
-.button--promos {
-  font-size: 14px;
-  line-height: 1.29;
-}
-
-.button--more {
-  color: $add-font;
-  background: $add-background;
-
-  &:focus,
-  &:hover {
-    background: #ebebeb;
+    color: rgba($button-fontcolor, 0.3);
   }
 
-  &:active {
-    color: rgba($add-font, 0.3);
+  &--promos {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  &--more {
+    color: $add-fontcolor;
+    background: $add-bgcolor;
+
+    &:focus,
+    &:hover {
+      background: #ebebeb;
+    }
+
+    &:active {
+      color: rgba($add-fontcolor, 0.3);
+    }
   }
 }
