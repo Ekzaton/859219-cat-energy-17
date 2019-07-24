@@ -1,8 +1,10 @@
 .page-footer {
-  background: $add-bgcolor;
+  background: $add-bg-color;
 }
 
 .page-footer__logo {
+  cursor: pointer;
+
   &:focus,
   &:hover {
     opacity: 0.8;

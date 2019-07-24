@@ -1,4 +1,6 @@
 .page-header__logo {
+  cursor: pointer;
+
   &:focus,
   &:hover {
     opacity: 0.8;

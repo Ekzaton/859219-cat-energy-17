@@ -1,0 +1,23 @@
+.contacts {
+  &--index {
+    background: $main-bg-color;
+  }
+}
+
+.contacts__title {
+  font-weight: normal;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.contacts__address {
+  font-family: $second-font-family;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.43;
+  color: $add-font-color;
+}
+
+.contacts__map {
+  border: none;
+}
