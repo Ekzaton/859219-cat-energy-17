@@ -1,20 +1,19 @@
-.product__link {
-  text-decoration: none;
-}
-
-.product__title {
+.results {
   margin: 0;
   padding: 0;
 
-  font-weight: normal;
-  line-height: 1.25;
-  text-transform: uppercase;
-  color: $main-font-color;
+  list-style: none;
 }
 
-.product__specs {
+.results_title {
+  font-size: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.results_text {
   font-family: $second-font-family;
   font-size: 12px;
-  line-height: 1.33;
+  text-transform: lowercase;
   color: $add-font-color;
 }

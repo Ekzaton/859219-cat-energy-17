@@ -1,0 +1,13 @@
+.input-label {
+  line-height: 1.13;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.input-label__control::placeholder {
+  font-family: $first-font-family;
+  font-size: 16px;
+  line-height: 1.13;
+  text-transform: uppercase;
+  color: #444444;
+}

@@ -2,8 +2,8 @@
   line-height: 1.25;
   text-transform: uppercase;
   text-decoration: none;
-  color: $button-fontcolor;
-  background: $button-bgcolor;
+  color: $button-font-color;
+  background: $button-bg-color;
 
   &:focus,
   &:hover {
@@ -11,7 +11,7 @@
   }
 
   &:active {
-    color: rgba($button-fontcolor, 0.3);
+    color: rgba($button-font-color, 0.3);
   }
 
   &--promos {
@@ -20,8 +20,8 @@
   }
 
   &--more {
-    color: $add-fontcolor;
-    background: $add-bgcolor;
+    color: $add-font-color;
+    background: $add-bg-color;
 
     &:focus,
     &:hover {
@@ -29,7 +29,17 @@
     }
 
     &:active {
-      color: rgba($add-fontcolor, 0.3);
+      color: rgba($add-font-color, 0.3);
     }
+  }
+
+  &--form {
+    padding: 0;
+    font: inherit;
+    line-height: 1.25;
+    text-transform: uppercase;
+    color: $button-font-color;
+    border: none;
+    cursor: pointer;
   }
 }

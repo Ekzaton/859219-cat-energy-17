@@ -8,6 +8,12 @@
 
   &--promos {
     line-height: 1;
-    color: $button-fontcolor;
+    color: $button-font-color;
   }
+}
+
+.page-main__text {
+  font-size: 14px;
+  line-height: 1.29;
+  text-transform: uppercase;
 }

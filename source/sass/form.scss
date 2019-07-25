@@ -1,0 +1,24 @@
+.form__title {
+  font-size: 24px;
+}
+
+.form__fieldset {
+  border: none;
+}
+
+.form__textarea {
+  &::placeholder {
+    font-family: $first-font-family;
+    font-size: 16px;
+    line-height: 1.13;
+    text-transform: uppercase;
+    color: #444444;
+  }
+}
+
+.form__note {
+  font-family: $second-font-family;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $add-font-color;
+}
