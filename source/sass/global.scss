@@ -1,10 +1,10 @@
 body {
+  margin: 0;
+  padding: 0;
+
   font-family: $first-font-family;
   font-size: 16px;
   line-height: 1;
-
-  margin: 0;
-  padding: 0;
 
   color: $main-font-color;
   background: $main-bg-color;
@@ -18,4 +18,23 @@ body {
   height: 1px;
   width: 1px;
   overflow: hidden;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: 1220px;
+    padding: 0 40px;
+  }
 }

@@ -1,20 +1,151 @@
-.product__link {
+.product__image-link {
+  width: 140px;
+  height: 144px;
+
+  text-decoration: none;
+}
+
+.product__image {
+  width: inherit;
+  height: inherit;
+}
+
+.product__description {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-width: 50%;
+}
+
+.product__title-link {
   text-decoration: none;
 }
 
 .product__title {
+  max-width: 100px;
   margin: 0;
   padding: 0;
+  margin-top: 21px;
+  margin-bottom: 12px;
 
+  font-size: 16px;
   font-weight: normal;
   line-height: 1.25;
   text-transform: uppercase;
   color: $main-font-color;
+
+  &--more {
+    min-width: 100%;
+    padding-top: 59px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
 }
 
 .product__specs {
+  display: table;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+
   font-family: $second-font-family;
   font-size: 12px;
   line-height: 1.33;
   color: $add-font-color;
+
+  border-collapse: collapse;
+
+  &--more {
+    position: relative;
+    display: block;
+    margin-bottom: 21px;
+    text-align: center;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -82px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 31px;
+      height: 31px;
+
+      opacity: 0.2;
+
+      background-color: transparent;
+      background-image: url("../img/icon-plus.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.product__specs-column {
+  padding: 1px 0 1px;
+
+  &:last-child {
+    text-align: right;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .product__image-link {
+    width: 324px;
+    height: 208px;
+    margin: -82px -38px 0;
+  }
+
+  .product__description {
+    min-width: 100%;
+  }
+
+  .product__title {
+    max-width: 140px;
+    margin: 37px auto 0;
+
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+
+    &--more {
+      min-width: 135px;
+      margin: 0 auto;
+      padding-top: 123px;
+    }
+  }
+
+  .product__specs {
+    margin: 19px auto 33px;
+
+    font-size: 16px;
+    line-height: 1;
+
+    &--more {
+      min-width: 165px;
+      margin: 28px auto 84px;
+
+      line-height: normal;
+
+      &::before {
+        top: -168px;
+        width: 61px;
+        height: 61px;
+      }
+    }
+  }
+
+  .product__specs-row {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .product__specs-column {
+    padding: 8px 0 7px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product__image-link {
+    width: 245px;
+  }
 }

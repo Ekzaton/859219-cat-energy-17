@@ -1,0 +1,16 @@
+.products__catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .products__catalog {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
