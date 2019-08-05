@@ -1,7 +1,13 @@
 .button {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+
   line-height: 1.25;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
   color: $button-font-color;
   background: $button-bg-color;
 
@@ -15,6 +21,9 @@
   }
 
   &--promos {
+    margin-bottom: 22px;
+    padding: 11px 0;
+
     font-size: 14px;
     line-height: 1.29;
   }
@@ -41,5 +50,26 @@
     color: $button-font-color;
     border: none;
     cursor: pointer;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--promos {
+      width: 245px;
+      margin-left: 90px;
+      padding: 17px 0 15px;
+
+      font-size: 20px;
+      line-height: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    &--promos {
+      margin-left: 84px;
+    }
   }
 }

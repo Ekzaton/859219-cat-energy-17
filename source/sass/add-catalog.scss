@@ -1,6 +1,39 @@
-.add-catalog {
-  margin: 0;
-  padding: 0;
+.add-catalog__item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 13px 0 17px;
 
-  list-style: none;
+  border-top: 1px solid #cdcdcd;
+
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .add-catalog__item {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 37px 27px;
+
+    border-top: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-catalog__item {
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 15px 0 16px;
+
+    border-left: none;
+    border-right: none;
+  }
 }

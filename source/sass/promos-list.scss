@@ -1,37 +1,129 @@
-.promos-list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
 .promos-list__item {
+  margin-bottom: 20px;
+  padding: 22px;
+
   background: $add-bg-color;
 }
 
 .promos-list__title {
+  position: relative;
   margin: 0;
   padding: 0;
+  padding-top: 8px;
+  padding-left: 70px;
+  padding-bottom: 16px;
 
   font-size: 24px;
   font-weight: normal;
   line-height: 1.54;
   text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    top: 2px;
+    left: 0;
+
+    background-color: $button-bg-color;
+
+    border-radius: 50%;
+  }
 }
 
 .promos-list__desc {
+  margin-bottom: 19px;
+  padding-bottom: 22px;
+
   font-family: $second-font-family;
   font-size: 14px;
   line-height: 1.29;
+
   color: $add-font-color;
+
+  border-bottom: 1px solid rgba(#000000, 0.1);
 }
 
 .promos-list__link {
   text-transform: uppercase;
   text-decoration: none;
+
   color: $main-font-color;
 
   &:active {
     color: rgba($main-font-color, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promos-list__item {
+    margin-bottom: 30px;
+    padding: 52px 52px 62px;
+  }
+
+  .promos-list__title {
+    font-size: 36px;
+    line-height: 1.03;
+    margin-top: 24px;
+    margin-bottom: 25px;
+    padding: 0;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 15px;
+      left: auto;
+      right: 10px;
+    }
+  }
+
+  .promos-list__desc {
+    max-width: 372px;
+    margin-bottom: 56px;
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 1.5;
+
+    border: none;
+
+    &:nth-child(2) {
+      max-width: 340px;
+    }
+  }
+
+  .promos-list__link {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promos-list__item {
+    max-width: 50%;
+    margin-bottom: 58px;
+    padding: 35px 52px 62px;
+  }
+
+  .promos-list__title {
+    margin-top: 41px;
+    margin-bottom: 74px;
+    padding-left: 164px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: -29px;
+      left: 0;
+    }
+  }
+
+  .promos-list__desc {
+    max-width: 466px;
+    margin-bottom: 31px;
+
+    &:nth-child(2) {
+      max-width: 466px;
+    }
   }
 }

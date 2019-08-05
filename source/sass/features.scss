@@ -1,5 +1,19 @@
-.features__title {
-  font-size: 36px;
-  font-weight: normal;
-  line-height: 1.67;
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 28px;
+  margin-bottom: 22px;
+  padding: 0;
+
+  list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    margin-top: 72px;
+    margin-bottom: -31px;
+
+    counter-reset: section;
+  }
 }

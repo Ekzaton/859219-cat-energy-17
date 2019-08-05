@@ -4,11 +4,20 @@
 
   font-size: 36px;
   font-weight: normal;
+  text-align: left;
   line-height: 1.67;
 
   &--promos {
+    margin-bottom: 26px;
+
     line-height: 1;
+    text-align: center;
     color: $button-font-color;
+  }
+
+  &--catalog {
+    margin-top: 15px;
+    margin-bottom: 28px;
   }
 }
 
@@ -16,4 +25,33 @@
   font-size: 14px;
   line-height: 1.29;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    font-size: 60px;
+    text-align: left;
+    line-height: 1;
+
+    &--promos {
+      max-width: 420px;
+      margin-left: -3px;
+      margin-bottom: 42px;
+
+      color: $main-font-color;
+    }
+
+    &--catalog {
+      margin-top: 57px;
+      margin-bottom: 165px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    &--catalog {
+      margin-top: 75px;
+    }
+  }
 }

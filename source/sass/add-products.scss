@@ -1,20 +1,109 @@
 .add-products__title {
-  margin: 0;
-  padding: 0;
+  margin: 28px 0 34px;
 
   font-size: 24px;
   font-weight: normal;
 }
 
+.add-products__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-products__catalog {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 .add-products__action {
-  background-color: $button-bg-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 39px 0 35px;
+  padding: 65px 0 42px;
+
+
   background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-size: 305px 100%;
+  background-size: 100% 289px;
   background-repeat: no-repeat;
 }
 
 .add-products__action-text {
+  max-width: 161px;
+  margin: 0;
+  padding: 122px 0 0;
+
+  text-align: center;
+
   font-family: $second-font-family;
   line-height: 1.25;
+
+
   color: $button-font-color;
+}
+
+@media (min-width: $tablet-width) {
+  .add-products__title {
+    max-width: 338px;
+    margin: -73px 0 80px;
+    padding: 0 37px;
+
+    font-size: 36px;
+  }
+
+  .add-products__action {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 69px 0 76px;
+    padding: 72px 125px 68px 91px;
+
+    text-align: right;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-size: 100% 200px;
+  }
+
+  .add-products__action-text {
+    padding: 0 0 0 331px;
+
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .add-products__title {
+    margin: -68px 0 80px -37px;
+  }
+
+  .add-products__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 85px;
+  }
+
+  .add-products__catalog {
+    flex-wrap: nowrap;
+    min-width: 895px;
+  }
+
+  .add-products__action {
+    flex-direction: column;
+    max-width: 245px;
+    margin: 0;
+    padding: 44px 42px 42px;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+    background-size: 100% 289px;
+  }
+
+  .add-products__action-text {
+    padding: 144px 0 0;
+
+    text-align: center;
+  }
 }

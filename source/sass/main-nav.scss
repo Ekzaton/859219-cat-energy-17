@@ -1,0 +1,36 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  width: 25px;
+  height: 20px;
+  top: -42px;
+  right: 0;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: -18px;
+  }
+}
+
+/*@media (min-width: $desktop-width) {
+
+}*/
