@@ -3,14 +3,15 @@
 }
 
 .promos__header {
-  padding-top: 27px;
-  margin: 0 -20px 3px;
+  margin: 0 -20px;
+  padding: 27px 20px 0;
+
 
   text-align: center;
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: top;
-  background-size: 100% 305px;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -25,7 +26,9 @@
 }
 
 .promos__image {
-  margin-top: 28px;
+  width: 280px;
+  height: 270px;
+  margin: 28px 0 3px;
 }
 
 .promos__list {
@@ -43,6 +46,8 @@
   }
 
   .promos__header {
+    position: relative;
+    min-height: 810px;
     margin: 0;
     padding-top: 57px;
     padding-left: 90px;
@@ -51,9 +56,20 @@
   }
 
   .promos__slogan {
+    margin-bottom: 48px;
     font-size: 20px;
     text-align: left;
     color: #111111;
+  }
+
+  .promos__image {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    width: 708px;
+    height: 609px;
+    margin: 0 auto;
   }
 
   .promos__list {
@@ -63,8 +79,22 @@
 
 @media (min-width: $desktop-width) {
   .promos__header {
+    min-height: 554px;
     padding-top: 109px;
     padding-left: 84px;
+  }
+
+  .promos__slogan {
+    margin-bottom: 53px;
+  }
+
+  .promos__image {
+    width: 522px;
+    height: 499px;
+    top: 5%;
+    left: 22%;
+    bottom: inherit;
+    margin: auto;
   }
 
   .promos__list {

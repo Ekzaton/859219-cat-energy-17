@@ -3,6 +3,9 @@
 }
 
 .example__text {
+  padding-right: 14px;
+  margin: 23px 0 25px;
+
   font-family: $second-font-family;
   font-size: 14px;
   line-height: 1.29;
@@ -10,7 +13,121 @@
 }
 
 .example__total {
+  margin: 0 0 35px;
+
   font-size: 14px;
   line-height: 1.43;
   text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    background: $main-bg-color;
+
+    border-top: 1px solid #e6e6e6;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 23px 0 53px;
+  }
+
+  .example__total {
+    max-width: 174px;
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 1;
+    text-align: right;
+  }
+
+  .example__total-top {
+    display: block;
+    margin: 0 0 9px;
+  }
+
+  .example__text-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 84px;
+  }
+
+  .example__comparison {
+    position: relative;
+    z-index: 1;
+    margin: 0 -30px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      height: 462px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    position: relative;
+    z-index: 1;
+
+    border: none;
+
+    &::after {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      height: 462px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      background: linear-gradient(to right, #f2f2f2 56%, #eaeaea 44%);
+    }
+  }
+
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__left {
+    max-width: 40%;
+    margin: 0;
+  }
+
+  .example__text {
+    max-width: 435px;
+    margin: 23px 0 68px;
+    padding: 0;
+  }
+
+  .example__text-wrapper {
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+  }
+
+  .example__total {
+    max-width: 350px;
+
+    text-align: left;
+  }
+
+  .example__total-top {
+    display: inline;
+    margin: 0 62px 0 0;
+  }
+
+  .example__comparison {
+    max-width: 60%;
+    margin: 0;
+  }
 }

@@ -43,12 +43,15 @@
   }
 
   &--form {
-    padding: 0;
     font: inherit;
     line-height: 1.25;
     text-transform: uppercase;
+
     color: $button-font-color;
+
     border: none;
+
+    outline: none;
     cursor: pointer;
   }
 }
@@ -57,19 +60,20 @@
   .button {
     &--promos {
       width: 245px;
-      margin-left: 90px;
-      padding: 17px 0 15px;
+      margin: 0;
+      padding: 16px 0;
 
       font-size: 20px;
       line-height: 1;
     }
-  }
-}
 
-@media (min-width: $desktop-width) {
-  .button {
-    &--promos {
-      margin-left: 84px;
+    &--form {
+      max-width: 570px;
+      margin: 0;
+      padding: 17px 0 15px;
+
+      font-size: 20px;
+      line-height: 1;
     }
   }
 }

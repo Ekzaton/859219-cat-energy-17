@@ -29,7 +29,7 @@
 
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
-  background-size: 100% 289px;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -65,7 +65,7 @@
     text-align: right;
 
     background-image: url("../img/gift-photo-tablet@1x.jpg");
-    background-size: 100% 200px;
+    background-size: cover;
   }
 
   .add-products__action-text {
