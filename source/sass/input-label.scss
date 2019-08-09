@@ -5,8 +5,8 @@
   text-transform: uppercase;
   color: #222222;
 
-  &--text,
-  &--text-2 {
+  &--cat,
+  &--owner {
     display: flex;
     align-items: center;
   }
@@ -213,7 +213,7 @@
 
 @media (min-width: $desktop-width) {
   .input-label {
-    &--text-2 {
+    &--owner {
       min-width: 570px;
       margin-bottom: 0;
     }

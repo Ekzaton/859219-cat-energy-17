@@ -71,12 +71,12 @@
     height: 517px;
 
     &--before {
-      clip: rect(auto, 345px, auto, auto);
+      clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
     }
 
     &--after {
       display: block;
-      clip: rect(auto, auto, auto, 345px);
+      clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
     }
   }
 
@@ -176,12 +176,12 @@
     margin-left: -80px;
 
     &--before {
-      clip: rect(auto, 365px, auto, auto);
+      clip-path: polygon(0 0, 53% 0, 53% 100%, 0 100%);
     }
 
     &--after {
       display: block;
-      clip: rect(auto, auto, auto, 365px);
+      clip-path: polygon(53% 0, 100% 0, 100% 100%, 53% 100%);
     }
   }
 
