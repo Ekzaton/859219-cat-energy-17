@@ -67,16 +67,22 @@
 
   .comparison__image {
     position: absolute;
-    width: 690px;
+    display: flex;
+    width: 345px;
     height: 517px;
+    top: 0;
+    bottom: 0;
 
-    &--before {
-      clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
-    }
+    overflow: hidden;
 
     &--after {
-      display: block;
-      clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+      right: 0;
+      justify-content: flex-end;
+    }
+
+    img {
+      width: 690px;
+      height: 517px;
     }
   }
 
@@ -172,17 +178,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .comparison__image {
-    margin-left: -80px;
-
-    &--before {
-      clip-path: polygon(0 0, 53% 0, 53% 100%, 0 100%);
-    }
-
-    &--after {
-      display: block;
-      clip-path: polygon(53% 0, 100% 0, 100% 100%, 53% 100%);
-    }
+  .comparison__images {
+    margin: 0 -60px;
   }
 
   .comparison__range {
