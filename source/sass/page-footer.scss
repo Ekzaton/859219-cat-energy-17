@@ -68,3 +68,9 @@
     border: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer__top {
+    position: relative;
+  }
+}
