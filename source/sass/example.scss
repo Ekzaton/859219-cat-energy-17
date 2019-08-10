@@ -21,6 +21,10 @@
   text-align: center;
 }
 
+.example__comparison {
+  margin: 0 -20px;
+}
+
 @media (min-width: $tablet-width) {
   .example {
     background: $main-bg-color;

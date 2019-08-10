@@ -60,7 +60,8 @@
 
         background-color: $button-bg-color;
         background-image: url("../img/index-background-desktop@1x.jpg");
-        background-position: contain;
+        background-position: center;
+        background-size: cover;
         background-repeat: no-repeat;
       }
     }
