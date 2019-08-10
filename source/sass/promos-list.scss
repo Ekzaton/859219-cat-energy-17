@@ -25,6 +25,7 @@
     height: 50px;
     top: 2px;
     left: 0;
+    right: auto;
 
     background-color: $button-bg-color;
 
@@ -59,7 +60,7 @@
 @media (min-width: $tablet-width) {
   .promos-list__item {
     margin-bottom: 30px;
-    padding: 52px 52px 62px;
+    padding: 52px 280px 62px 52px;
   }
 
   .promos-list__title {
@@ -72,14 +73,17 @@
     &::before {
       width: 200px;
       height: 200px;
-      top: 15px;
+      top: 16px;
       left: auto;
-      right: 10px;
+      right: -218px;
+
+      background-color: $button-bg-color;
+
+      border-radius: 50%;
     }
   }
 
   .promos-list__desc {
-    max-width: 372px;
     margin-bottom: 56px;
     padding: 0;
 
@@ -88,8 +92,8 @@
 
     border: none;
 
-    &:nth-child(2) {
-      max-width: 340px;
+    &--pro {
+      padding-right: 35px;
     }
   }
 
@@ -122,8 +126,8 @@
     max-width: 466px;
     margin-bottom: 31px;
 
-    &:nth-child(2) {
-      max-width: 466px;
+    &--pro {
+      padding-right: 0;
     }
   }
 }

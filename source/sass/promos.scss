@@ -6,12 +6,11 @@
   margin: 0 -20px;
   padding: 27px 20px 0;
 
-
   text-align: center;
 
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-image: linear-gradient(to top, $main-bg-color 60px, transparent 60px), url("../img/index-background-mobile@1x.jpg"), linear-gradient(to top, $main-bg-color 175px, $button-bg-color 175px);
   background-position: top;
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
 }
 
@@ -28,7 +27,7 @@
 .promos__image {
   width: 280px;
   height: 270px;
-  margin: 28px 0 3px;
+  margin: 29px 0 2px;
 }
 
 .promos__list {
