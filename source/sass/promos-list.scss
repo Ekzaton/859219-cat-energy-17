@@ -1,8 +1,28 @@
 .promos-list__item {
+  position: relative;
   margin-bottom: 20px;
   padding: 22px;
 
   background: $add-bg-color;
+}
+
+.promos-list__icon {
+  position: absolute;
+  z-index: 1;
+
+  &--slim {
+    width: 35px;
+    height: 49px;
+    top: 22px;
+    left: 30px;
+  }
+
+  &--pro {
+    width: 67px;
+    height: 28px;
+    top: 35px;
+    left: 13px;
+  }
 }
 
 .promos-list__title {
@@ -63,6 +83,24 @@
     padding: 52px 280px 62px 52px;
   }
 
+  .promos-list__icon {
+    &--slim {
+      width: 141px;
+      height: 194px;
+      top: 80px;
+      left: auto;
+      right: 92px;
+    }
+
+    &--pro {
+      width: 268px;
+      height: 113px;
+      top: 135px;
+      left: auto;
+      right: 28px;
+    }
+  }
+
   .promos-list__title {
     font-size: 36px;
     line-height: 1.03;
@@ -107,6 +145,24 @@
     max-width: 50%;
     margin-bottom: 58px;
     padding: 35px 52px 62px;
+  }
+
+  .promos-list__icon {
+    &--slim {
+      width: 71px;
+      height: 97px;
+      top: 41px;
+      left: 65px;
+      right: auto;
+    }
+
+    &--pro {
+      width: 134px;
+      height: 57px;
+      top: 69px;
+      left: 34px;
+      right: auto;
+    }
   }
 
   .promos-list__title {

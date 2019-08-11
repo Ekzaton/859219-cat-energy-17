@@ -12,6 +12,10 @@
   background-position: top;
   background-size: 100%;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: linear-gradient(to top, $main-bg-color 60px, transparent 60px), url("../img/index-background-mobile@2x.jpg"), linear-gradient(to top, $main-bg-color 175px, $button-bg-color 175px);
+  }
 }
 
 .promos__slogan {
@@ -88,10 +92,10 @@
   }
 
   .promos__image {
-    width: 522px;
+    width: 552px;
     height: 499px;
     top: 5%;
-    left: 22%;
+    left: 19%;
     bottom: inherit;
     margin: auto;
   }

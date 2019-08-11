@@ -12,7 +12,11 @@
       <div class="container">
         <div class="page-header__wrapper">
           <a class="page-header__logo" href="index.html">
-            <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип интернет-магазина «Кэт энерджи»">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина «Кэт энерджи»">
+            </picture>
           </a>
           <nav class="main-nav">
             <button class="main-nav__toggle" type="button">М</button>

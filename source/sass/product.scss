@@ -91,6 +91,8 @@
 
 @media (min-width: $tablet-width) {
   .product__image-link {
+    display: flex;
+    flex-direction: column-reverse;
     width: 324px;
     height: 208px;
     margin: -82px -38px 0;
