@@ -28,10 +28,10 @@
 
 .page-footer__social {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  margin: 0;
-  padding: 23px 0 19px;
+  align-items: center;
+  margin: 0 0 0 -3px;
+  padding: 21px 0;
 
   list-style: none;
 
@@ -58,11 +58,12 @@
   }
 
   .page-footer__logo {
-    margin: 0;
-    padding: 64px 0 62px;
+    margin: 64px 0 62px;
+    padding: 0;
   }
 
   .page-footer__social {
+    margin: 0 0 0 25px;
     padding: 0;
 
     border: none;

@@ -18,8 +18,10 @@
               <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Логотип интернет-магазина «Кэт энерджи»">
             </picture>
           </a>
-          <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">М</button>
+          <button class="toggle toggle--no-js" type="button">
+            <span class="toggle__text">Меню</span>
+          </button>
+          <nav class="main-nav main-nav--no-js">
             <ul class="main-nav__list nav-list">
               <li class="nav-list__item">
                 <a class="nav-list__link nav-list__link--active">Главная</a>
@@ -46,21 +48,28 @@
             <h2 class="page-main__title page-main__title--promos">Функциональное питание для котов</h2>
             <p class="promos__slogan">Занялся собой? Займись котом!</p>
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.webp, img/index-can-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.webp, img/index-can-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/index-can-mobile@1x.webp, img/index-can-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg  2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
               <img class="promos__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy">
             </picture>
             <a class="button button--promos" href="form.html">Подобрать программу</a>
           </div>
           <ul class="promos__list promos-list">
             <li class="promos-list__item">
-              <img class="promos-list__icon promos-list__icon--slim" src="img/icon-cat-slim.svg" alt="Slim">
+              <svg class="promos-list__icon promos-list__icon--slim" width="35" height="49">
+                <use xlink:href="img/sprite.svg#icon-cat-slim"></use>
+              </svg>
               <h3 class="promos-list__title">Похудение</h3>
               <p class="promos-list__desc promos-list__desc--slim">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="promos-list__link" href="catalog.html">Каталог Slim</a>
             </li>
             <li class="promos-list__item">
-              <img class="promos-list__icon promos-list__icon--pro" src="img/icon-cat-pro.svg" alt="Pro">
+              <svg class="promos-list__icon promos-list__icon--pro" width="67" height="28">
+                <use xlink:href="img/sprite.svg#icon-cat-pro"></use>
+              </svg>
               <h3 class="promos-list__title">Набор массы</h3>
               <p class="promos-list__desc promos-list__desc--pro">Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="promos-list__link" href="catalog.html">Каталог Pro</a>
@@ -115,6 +124,9 @@
               <div class="comparison__images">
                 <div class="comparison__image comparison__image--before">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp, img/before-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
                     <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
                     <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="До">
@@ -122,6 +134,9 @@
                 </div>
                 <div class="comparison__image comparison__image--after">
                   <picture>
+                    <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
                     <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
                     <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="После">
@@ -159,28 +174,40 @@
           </a>
           <ul class="page-footer__social social">
             <li class="social__item">
-              <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
-                <img class="social__icon" src="img/icon-vk.svg" width="22" height="12" alt="Мы в ВК">
+              <a class="social__link" href="https://vk.com/htmlacademy">
+                <svg class="social__icon social__icon--vk" width="22" height="12">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--insta" href="https://www.instagram.com/htmlacademy">
-                <img class="social__icon" src="img/icon-insta.svg" width="17" height="17" alt="Мы в Instagram">
+              <a class="social__link" href="https://www.instagram.com/htmlacademy">
+                <svg class="social__icon social__icon--insta" width="17" height="17">
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy">
-                <img class="social__icon" src="img/icon-fb.svg" width="10" height="19" alt="Мы в Facebook">
+              <a class="social__link" href="https://www.facebook.com/htmlacademy">
+                <svg class="social__icon social__icon--fb" width="10" height="19">
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
               </a>
             </li>
           </ul>
           <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__title">HTML Academy</span>
-            <img class="copyright__logo-image" src="img/htmlacademy.svg" width="40" height="40" alt="Логотип «HTML Academy»">
+            <svg class="copyright__logo-image" width="40" height="40">
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>
     </footer>
 
+    <script src="js/mobilemenu.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script src="js/svgxuse.min.js"></script>
   </body>
 </html>

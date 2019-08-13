@@ -1,13 +1,11 @@
 .main-nav {
   position: relative;
-}
+  display: none;
 
-.main-nav__toggle {
-  position: absolute;
-  width: 25px;
-  height: 20px;
-  top: -42px;
-  right: 0;
+  &--open,
+  &--no-js {
+    display: block;
+  }
 }
 
 .main-nav__list {
@@ -20,8 +18,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav__toggle {
-    display: none;
+  .main-nav {
+    display: block;
   }
 
   .main-nav__list {

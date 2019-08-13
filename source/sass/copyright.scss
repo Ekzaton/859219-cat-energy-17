@@ -12,10 +12,17 @@
   height: 40px;
   margin-right: -7px;
   padding-top: 18px;
+
+  fill: #666666;
+
+  &:focus,
+  &:hover {
+    fill: $button-bg-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .copyright__title {
-    margin-right: 18px;
+    margin-right: 16px;
   }
 }

@@ -185,6 +185,16 @@
     margin: 0 -80px;
   }
 
+  .comparison__image {
+    &--before {
+      width: 365px;
+    }
+
+    &--after {
+      width: 325px;
+    }
+  }
+
   .comparison__range {
     padding: 36px 0 68px;
   }
