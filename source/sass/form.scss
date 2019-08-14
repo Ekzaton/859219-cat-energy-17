@@ -18,11 +18,11 @@
   }
 
   &--comment {
-    margin-bottom: 26px;
+    margin-bottom: 27px;
   }
 
   &--check {
-    margin-bottom: 34px;
+    margin-bottom: 35px;
   }
 
   & input[type="radio"],
@@ -37,12 +37,43 @@
 }
 
 .form__title {
+  position: relative;
+  margin-left: -20px;
   margin-bottom: 30px;
+  padding: 0 20px 0 20px;
 
   font-size: 24px;
 
+  background: $main-bg-color;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 60%;
+    width: 100vw;
+    height: 3px;
+
+    background: $button-bg-color;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+
   &--owner {
+    margin-right: 77px;
     margin-bottom: 34px;
+
+    &::before,
+    &::after {
+      top: 30%;
+    }
   }
 
   &--comment {
@@ -50,7 +81,7 @@
   }
 
   &--check {
-    margin-bottom: 37px;
+    margin-bottom: 35px;
   }
 }
 
@@ -108,10 +139,19 @@
   }
 
   .form__title {
+    margin-left: -40px;
+    padding: 0 40px 0 40px;
+
     font-size: 36px;
 
     &--owner {
+      margin-right: 0;
       margin-bottom: 76px;
+
+      &::after,
+      &::before {
+        top: 60%;
+      }
     }
 
     &--comment {
