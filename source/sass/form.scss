@@ -38,42 +38,29 @@
 
 .form__title {
   position: relative;
-  margin-left: -20px;
   margin-bottom: 30px;
-  padding: 0 20px 0 20px;
+  margin-left: -20px;
+  padding: 0 20px;
 
   font-size: 24px;
 
   background: $main-bg-color;
 
-  &::before,
   &::after {
     position: absolute;
     content: "";
     z-index: -1;
-    top: 60%;
     width: 100vw;
     height: 3px;
+    top: 14px;
+    left: 0;
 
     background: $button-bg-color;
   }
 
-  &::before {
-    left: 0;
-  }
-
-  &::after {
-    right: 0;
-  }
-
   &--owner {
-    margin-right: 77px;
+    max-width: 181px;
     margin-bottom: 34px;
-
-    &::before,
-    &::after {
-      top: 30%;
-    }
   }
 
   &--comment {
@@ -138,31 +125,6 @@
     margin-bottom: 72px;
   }
 
-  .form__title {
-    margin-left: -40px;
-    padding: 0 40px 0 40px;
-
-    font-size: 36px;
-
-    &--owner {
-      margin-right: 0;
-      margin-bottom: 76px;
-
-      &::after,
-      &::before {
-        top: 60%;
-      }
-    }
-
-    &--comment {
-      margin-bottom: 76px;
-    }
-
-    &--check {
-      margin-bottom: 57px;
-    }
-  }
-
   .form__fieldset {
     margin-bottom: 72px;
 
@@ -183,6 +145,31 @@
 
     &--check {
       margin-bottom: 22px;
+    }
+  }
+
+  .form__title {
+    margin-left: -40px;
+    padding: 0 40px;
+
+    font-size: 36px;
+
+    &::after {
+      top: 22px;
+      left: -30px;
+    }
+
+    &--owner {
+      max-width: 100%;
+      margin-bottom: 76px;
+    }
+
+    &--comment {
+      margin-bottom: 76px;
+    }
+
+    &--check {
+      margin-bottom: 57px;
     }
   }
 
@@ -251,6 +238,12 @@
 
     &--check {
       margin-bottom: 29px;
+    }
+  }
+
+  .form__title {
+    &::after {
+      left: calc(((1300px - 100vw)/2));
     }
   }
 

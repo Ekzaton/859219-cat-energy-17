@@ -1,8 +1,25 @@
 .add-products__title {
-  margin: 28px 0 34px;
+  position: relative;
+  max-width: 226px;
+  margin: 28px 0 34px -20px;
+  padding: 0 20px;
 
   font-size: 24px;
   font-weight: normal;
+
+  background: $main-bg-color;
+
+  &::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 100vw;
+    height: 3px;
+    top: 14px;
+    left: 0;
+
+    background: $button-bg-color;
+  }
 }
 
 .add-products__wrapper {
@@ -54,9 +71,14 @@
   .add-products__title {
     max-width: 338px;
     margin: -73px 0 80px;
-    padding: 0 37px;
+    padding: 0 40px;
 
     font-size: 36px;
+
+    &::after {
+      top: 22px;
+      left: -30px;
+    }
   }
 
   .add-products__action {
@@ -84,7 +106,11 @@
 
 @media (min-width: $desktop-width) {
   .add-products__title {
-    margin: -68px 0 80px -37px;
+    margin: -68px 0 80px -40px;
+
+    &::after {
+      left: calc(((1300px - 100vw)/2));
+    }
   }
 
   .add-products__wrapper {
