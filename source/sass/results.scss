@@ -13,7 +13,7 @@
 
   text-align: center;
 
-  border: 1px solid #cdcdcd;
+  border: 1px solid $very-light-grey;
   border-radius: 3px;
 }
 
@@ -21,7 +21,7 @@
   max-width: 82px;
   margin: 0 auto -21px;
 
-  background: $add-bg-color;
+  background: $white-smoke;
 }
 
 .results_title {
@@ -33,10 +33,10 @@
 .results_text {
   margin: 9px 0 0;
 
-  font-family: $second-font-family;
+  font-family: $arial;
   font-size: 12px;
   text-transform: lowercase;
-  color: $add-font-color;
+  color: $charcoal;
 }
 
 @media (min-width: $tablet-width) {
@@ -55,7 +55,7 @@
     max-width: 140px;
     margin: 0 auto -25px;
 
-    background: $main-bg-color;
+    background: $white;
   }
 
   .results_title {
@@ -77,6 +77,6 @@
   }
 
   .results__wrapper {
-    background: $add-bg-color;
+    background: $white-smoke;
   }
 }

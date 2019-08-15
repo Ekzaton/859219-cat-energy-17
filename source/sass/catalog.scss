@@ -5,10 +5,10 @@
   margin: 0 -20px;
   padding: 0 20px 24px;
 
-  border-top: 1px solid #ededed;
+  border-top: 1px solid $whisper-4;
 
   &:last-child {
-    border-bottom: 1px solid #ededed;
+    border-bottom: 1px solid $whisper-4;
   }
 }
 
@@ -18,16 +18,20 @@
     margin: 0 0 140px;
     padding: 0 38px 40px;
 
-    background-color: $add-bg-color;
+    background-color: $white-smoke;
 
     border: none;
 
     &--more {
       padding: 39px 37px;
 
-      background-color: $main-bg-color;
+      background-color: $white;
 
-      border: 1px solid rgba(#cdcdcd, 0.5);
+      border: 1px solid $whisper-1;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid $whisper-1;
     }
   }
 }

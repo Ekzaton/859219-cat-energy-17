@@ -8,16 +8,16 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  color: $button-font-color;
-  background: $button-bg-color;
+  color: $white;
+  background: $apple;
 
   &:focus,
   &:hover {
-    background: #5eaa2f;
+    background: $limeade;
   }
 
   &:active {
-    color: rgba($button-font-color, 0.3);
+    color: rgba($white, 0.3);
   }
 
   &--promos {
@@ -29,16 +29,16 @@
   }
 
   &--more {
-    color: $add-font-color;
-    background: $add-bg-color;
+    color: $charcoal;
+    background: $white-smoke;
 
     &:focus,
     &:hover {
-      background: #ebebeb;
+      background: $whisper-3;
     }
 
     &:active {
-      color: rgba($add-font-color, 0.3);
+      color: rgba($charcoal, 0.3);
     }
   }
 
@@ -47,7 +47,7 @@
     line-height: 1.25;
     text-transform: uppercase;
 
-    color: $button-font-color;
+    color: $white;
 
     border: none;
 

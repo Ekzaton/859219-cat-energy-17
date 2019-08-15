@@ -3,7 +3,7 @@
 
   line-height: 1.13;
   text-transform: uppercase;
-  color: #222222;
+  color: $nero;
 
   &--cat,
   &--owner {
@@ -29,7 +29,7 @@
       left: 0;
       top: 0;
 
-      border: 1px solid #cdcdcd;
+      border: 1px solid $very-light-grey;
       border-radius: 50%;
     }
 
@@ -42,7 +42,7 @@
       left: 9px;
       top: 9px;
 
-      background: $button-bg-color;
+      background: $apple;
 
       border: none;
       border-radius: 50%;
@@ -67,7 +67,7 @@
       left: 0;
       top: 0;
 
-      border: 1px solid #cdcdcd;
+      border: 1px solid $very-light-grey;
     }
 
     &::after {
@@ -79,8 +79,8 @@
       width: 10px;
       height: 19px;
 
-      border-right: 2px solid $button-bg-color;
-      border-bottom: 2px solid $button-bg-color;
+      border-right: 2px solid $apple;
+      border-bottom: 2px solid $apple;
 
       transform: translateY(-50%) rotate(45deg);
     }
@@ -93,13 +93,13 @@
   &:focus,
   &:hover {
     &::before {
-      border: 1px solid #bababa;
+      border: 1px solid $silver;
     }
   }
 
   &:active {
     &::before {
-      border: 1px solid rgba(#bababa, 0.3);
+      border: 1px solid rgba($silver, 0.3);
     }
 
     &::after {
@@ -117,37 +117,37 @@
   width: 100%;
   padding: 12px 15px 13px;
 
-  font-family: $first-font-family;
+  font-family: $oswald;
   font-size: 16px;
   line-height: 1.13;
   text-transform: uppercase;
 
-  color: $add-font-color;
+  color: $charcoal;
 
-  border: 1px solid rgba(#cdcdcd, 0.5);
+  border: 1px solid $whisper-1;
 
   outline: none;
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    border: 1px solid $very-light-grey;
   }
 
   &:focus:invalid {
-    outline: 2px solid #ff8282;
+    outline: 2px solid $light-coral;
   }
 
   &:focus,
   &:active {
-    outline: 2px solid $add-font-color;
+    outline: 2px solid $charcoal;
   }
 
   &::placeholder {
-    font-family: $first-font-family;
+    font-family: $oswald;
     font-size: 16px;
     line-height: 1.13;
     text-transform: uppercase;
 
-    color: $add-font-color;
+    color: $charcoal;
   }
 }
 

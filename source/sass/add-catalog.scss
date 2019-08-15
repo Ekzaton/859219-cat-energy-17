@@ -4,10 +4,10 @@
   flex-direction: column;
   padding: 13px 0 17px;
 
-  border-top: 1px solid #cdcdcd;
+  border-top: 1px solid $very-light-grey;
 
   &:last-child {
-    border-bottom: 1px solid #cdcdcd;
+    border-bottom: 1px solid $very-light-grey;
   }
 }
 
@@ -17,12 +17,12 @@
     justify-content: space-between;
     padding: 25px 37px 27px;
 
-    border-top: 1px solid #cdcdcd;
-    border-left: 1px solid #cdcdcd;
-    border-right: 1px solid #cdcdcd;
+    border-top: 1px solid $whisper-1;
+    border-left: 1px solid $whisper-1;
+    border-right: 1px solid $whisper-1;
 
     &:last-child {
-      border-bottom: 1px solid #cdcdcd;
+      border-bottom: 1px solid $whisper-1;
     }
   }
 }

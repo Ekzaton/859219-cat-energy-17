@@ -1,15 +1,15 @@
 .example {
-  background: $add-bg-color;
+  background: $white-smoke;
 }
 
 .example__text {
   padding-right: 14px;
   margin: 23px 0 25px;
 
-  font-family: $second-font-family;
+  font-family: $arial;
   font-size: 14px;
   line-height: 1.29;
-  color: $add-font-color;
+  color: $charcoal;
 }
 
 .example__total {
@@ -27,9 +27,9 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background: $main-bg-color;
+    background: $white;
 
-    border-top: 1px solid #e6e6e6;
+    border-top: 1px solid $whisper-1;
   }
 
   .example__text {
@@ -73,7 +73,7 @@
       right: 0;
       bottom: 0;
 
-      background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+      background: linear-gradient(to right, $white-smoke 50%, $whisper-2 50%);
     }
   }
 }
@@ -94,7 +94,7 @@
       right: 0;
       bottom: 0;
 
-      background: linear-gradient(to right, #f2f2f2 56%, #eaeaea 44%);
+      background: linear-gradient(to right, $white-smoke 56%, $whisper-2 44%);
     }
   }
 

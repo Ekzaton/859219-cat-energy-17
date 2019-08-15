@@ -8,9 +8,9 @@
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  color: $main-font-color;
+  color: $black-2;
 
-  border-top: 1px solid rgba(#000000, 0.1);
+  border-top: 1px solid rgba($black-1, 0.1);
 
   &:focus,
   &:hover {
@@ -40,7 +40,7 @@
     font-size: 18px;
     font-weight: normal;
     line-height: 1.39;
-    color: #222222;
+    color: $nero;
 
     border: none;
 
@@ -54,7 +54,7 @@
         left: 0;
         right: 0;
 
-        background: $button-bg-color;
+        background: $apple;
       }
     }
   }
@@ -72,19 +72,10 @@
   }
 
   .page-header--background .nav-list__link {
-    color: $main-bg-color;
-
-    &:focus,
-    &:hover {
-      color: rgba($main-bg-color, 0.6);
-    }
-
-    &:active {
-      color: rgba($main-bg-color, 0.3);
-    }
+    color: $white;
 
     &::after {
-      background: $main-bg-color;
+      background: $white;
     }
   }
 }

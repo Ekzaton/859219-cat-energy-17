@@ -3,7 +3,7 @@
   margin-bottom: 20px;
   padding: 22px 20px;
 
-  background: $add-bg-color;
+  background: $white-smoke;
 }
 
 .promos-list__icon {
@@ -47,7 +47,7 @@
     left: 0;
     right: auto;
 
-    background-color: $button-bg-color;
+    background-color: $apple;
 
     border-radius: 50%;
   }
@@ -57,13 +57,13 @@
   margin-bottom: 19px;
   padding-bottom: 22px;
 
-  font-family: $second-font-family;
+  font-family: $arial;
   font-size: 14px;
   line-height: 1.29;
 
-  color: $add-font-color;
+  color: $charcoal;
 
-  border-bottom: 1px solid rgba(#000000, 0.1);
+  border-bottom: 1px solid rgba($black-1, 0.1);
 }
 
 .promos-list__link {
@@ -73,7 +73,7 @@
   text-transform: uppercase;
   text-decoration: none;
 
-  color: $main-font-color;
+  color: $black-2;
 
   &::after {
     position: absolute;
@@ -141,7 +141,7 @@
       left: auto;
       right: -218px;
 
-      background-color: $button-bg-color;
+      background-color: $apple;
 
       border-radius: 50%;
     }

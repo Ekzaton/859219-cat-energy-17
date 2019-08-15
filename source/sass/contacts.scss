@@ -4,10 +4,10 @@
   margin: 0 -20px;
   padding: 28px 20px 26px;
 
-  background: $add-bg-color;
+  background: $white-smoke;
 
   &--index {
-    background: $main-bg-color;
+    background: $white;
   }
 }
 
@@ -22,11 +22,11 @@
 .contacts__address {
   max-width: 155px;
 
-  font-family: $second-font-family;
+  font-family: $arial;
   font-size: 14px;
   font-style: normal;
   line-height: 1.43;
-  color: $add-font-color;
+  color: $charcoal;
 }
 
 .contacts__map {
@@ -70,7 +70,7 @@
     margin: 0;
     padding: 65px 88px 56px 76px;
 
-    background: $main-bg-color;
+    background: $white;
   }
 
   .contacts__address {

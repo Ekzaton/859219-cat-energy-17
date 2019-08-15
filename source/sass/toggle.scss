@@ -30,7 +30,7 @@
   vertical-align: middle;
 
   color: transparent;
-  background: $main-font-color;
+  background: $black-2;
 
   &::before,
   &::after {
@@ -40,7 +40,7 @@
     height: 2px;
     right: 0;
 
-    background: $main-font-color;
+    background: $black-2;
 
     transform-origin: 50% 50%;
   }
