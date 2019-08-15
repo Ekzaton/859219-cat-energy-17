@@ -74,15 +74,6 @@
   .page-header--background .nav-list__link {
     color: $white;
 
-    &:focus,
-    &:hover {
-      color: rgba($white, 0.6);
-    }
-
-    &:active {
-      color: rgba($white, 0.3);
-    }
-
     &::after {
       background: $white;
     }
