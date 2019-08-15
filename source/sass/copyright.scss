@@ -3,8 +3,8 @@
   padding-top: 30px;
   padding-bottom: 32px;
 
-  font-family: $second-font-family;
-  color: $add-font-color;
+  font-family: $arial;
+  color: $charcoal;
 }
 
 .copyright__logo-image {
@@ -13,11 +13,11 @@
   margin-right: -7px;
   padding-top: 18px;
 
-  fill: #666666;
+  fill: $dim-gray;
 
   &:focus,
   &:hover {
-    fill: $button-bg-color;
+    fill: $apple;
   }
 }
 

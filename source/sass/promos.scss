@@ -8,13 +8,13 @@
 
   text-align: center;
 
-  background-image: linear-gradient(to top, $main-bg-color 60px, transparent 60px), url("../img/index-background-mobile@1x.jpg"), linear-gradient(to top, $main-bg-color 175px, $button-bg-color 175px);
+  background-image: linear-gradient(to top, $white 60px, transparent 60px), url("../img/index-background-mobile@1x.jpg"), linear-gradient(to top, $white 175px, $apple 175px);
   background-position: top;
   background-size: 100%;
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: linear-gradient(to top, $main-bg-color 60px, transparent 60px), url("../img/index-background-mobile@2x.jpg"), linear-gradient(to top, $main-bg-color 175px, $button-bg-color 175px);
+    background-image: linear-gradient(to top, $white 60px, transparent 60px), url("../img/index-background-mobile@2x.jpg"), linear-gradient(to top, $white 175px, $apple 175px);
   }
 }
 
@@ -25,7 +25,7 @@
 
   font-size: 14px;
   text-transform: uppercase;
-  color: $button-font-color;
+  color: $white;
 }
 
 .promos__image {
@@ -62,7 +62,7 @@
     margin-bottom: 48px;
     font-size: 20px;
     text-align: left;
-    color: #111111;
+    color: $black-2;
   }
 
   .promos__image {

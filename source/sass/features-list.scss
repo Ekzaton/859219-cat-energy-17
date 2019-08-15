@@ -10,7 +10,7 @@
     height: 60px;
     margin-right: 20px;
 
-    background-color: $button-bg-color;
+    background-color: $apple;
   }
 
   &--leaf {
@@ -69,10 +69,11 @@
 .features-list__desc {
   margin: 0;
 
-  font-family: $second-font_family;
+  font-family: $arial;
   font-size: 14px;
   line-height: 1.29;
-  color: $add-font-color;
+
+  color: $charcoal;
 }
 
 @media (min-width: $tablet-width) {
@@ -99,7 +100,7 @@
       left: 113px;
 
       font-size: 280px;
-      color: $add-bg-color;
+      color: $white-smoke;
 
       counter-increment: section;
     }

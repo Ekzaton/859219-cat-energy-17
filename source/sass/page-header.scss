@@ -1,5 +1,5 @@
 .page-header {
-  border-bottom: 1px solid rgba(#000000, 0.1);
+  border-bottom: 1px solid rgba($black-1, 0.1);
 }
 
 .page-header__wrapper {
@@ -58,7 +58,7 @@
         top: 0;
         right: 0;
 
-        background-color: $button-bg-color;
+        background-color: $apple;
         background-image: url("../img/index-background-desktop@1x.jpg");
         background-position: center;
         background-size: cover;

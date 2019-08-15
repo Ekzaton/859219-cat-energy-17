@@ -9,8 +9,8 @@
     margin-bottom: 28px;
     padding: 20px;
 
-    border-top: 1px solid rgba(#cdcdcd, 0.5);
-    border-bottom: 1px solid rgba(#cdcdcd, 0.5);
+    border-top: 1px solid $whisper-1;
+    border-bottom: 1px solid $whisper-1;
   }
 
   &--owner {
@@ -44,7 +44,7 @@
 
   font-size: 24px;
 
-  background: $main-bg-color;
+  background: $white;
 
   &::after {
     position: absolute;
@@ -55,7 +55,7 @@
     top: 14px;
     left: 0;
 
-    background: $button-bg-color;
+    background: $apple;
   }
 
   &--owner {
@@ -79,45 +79,45 @@
   box-sizing: border-box;
   resize: none;
 
-  font-family: $first-font-family;
+  font-family: $oswald;
   font-size: 16px;
   line-height: 1.13;
   text-transform: uppercase;
 
-  color: $add-font-color;
+  color: $charcoal;
 
-  border: 1px solid rgba(#cdcdcd, 0.5);
+  border: 1px solid $whisper-1;
 
   outline: none;
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    border: 1px solid $very-light-grey;
   }
 
   &:focus,
   &:active {
-    outline: 2px solid $add-font-color;
+    outline: 2px solid $charcoal;
   }
 
   &::placeholder {
-    font-family: $first-font-family;
+    font-family: $oswald;
     font-size: 16px;
     line-height: 1.13;
     text-transform: uppercase;
 
-    color: $add-font-color;
+    color: $charcoal;
   }
 }
 
 .form__note {
   margin: 18px 0 32px;
 
-  font-family: $second-font-family;
+  font-family: $arial;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
 
-  color: $add-font-color;
+  color: $charcoal;
 }
 
 @media (min-width: $tablet-width) {
@@ -132,7 +132,7 @@
       margin: 0 0 75px;
       padding: 24px 27px;
 
-      border: 1px solid rgba(#cdcdcd, 0.5);
+      border: 1px solid $whisper-1;
     }
 
     &--owner {

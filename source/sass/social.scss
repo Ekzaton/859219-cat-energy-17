@@ -11,15 +11,15 @@
 }
 
 .social__icon {
-  fill: #666666;
+  fill: $dim-gray;
 
   &:focus,
   &:hover {
-    fill: $button-bg-color;
+    fill: $apple;
   }
 
   &:active {
-    fill: rgba($button-bg-color, 0.3);
+    fill: rgba($apple, 0.3);
   }
 
   &--vk {
