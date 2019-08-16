@@ -7,6 +7,7 @@
 
   &--cat,
   &--owner {
+    position: relative;
     display: flex;
     align-items: center;
   }
@@ -128,17 +129,29 @@
 
   outline: none;
 
+  &--icon {
+    padding: 12px 45px 13px 15px;
+  }
+
   &:hover {
     border: 1px solid $very-light-grey;
   }
 
   &:focus:invalid {
     outline: 2px solid $light-coral;
+
+    & ~ .input-label__icon {
+      fill: $light-coral;
+    }
   }
 
   &:focus,
   &:active {
     outline: 2px solid $charcoal;
+
+    & ~ .input-label__icon {
+      fill: $apple;
+    }
   }
 
   &::placeholder {
@@ -148,6 +161,26 @@
     text-transform: uppercase;
 
     color: $charcoal;
+  }
+}
+
+.input-label__icon {
+  position: absolute;
+
+  fill: $nero;
+
+  &--email {
+    width: 18px;
+    height: 14px;
+    top: 16px;
+    right: 15px;
+  }
+
+  &--phone {
+    width: 20px;
+    height: 20px;
+    top: 12px;
+    right: 13px;
   }
 }
 
@@ -204,9 +237,25 @@
     font-size: 20px;
     line-height: 1;
 
+    &--icon {
+      padding: 10px 45px 10px 18px;
+    }
+
     &::placeholder {
       font-size: 20px;
       line-height: 1;
+    }
+  }
+
+  .input-label__icon {
+    &--email {
+      top: 20px;
+      right: 18px;
+    }
+
+    &--phone {
+      top: 16px;
+      right: 16px;
     }
   }
 }
