@@ -49,6 +49,14 @@
     position: relative;
 
     &--background {
+      & .nav-list__link {
+        color: $white;
+
+        &::after {
+          background: $white;
+        }
+      }
+
       &::after {
         position: absolute;
         z-index: -1;

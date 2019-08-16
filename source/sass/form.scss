@@ -28,11 +28,12 @@
   & input[type="radio"],
   & input[type="checkbox"] {
     display: none;
-  }
 
-  & input[type="radio"]:checked + label::after,
-  & input[type="checkbox"]:checked + label::after {
-    display: block;
+    &:checked {
+      & + label::after {
+        display: block;
+      }
+    }
   }
 }
 

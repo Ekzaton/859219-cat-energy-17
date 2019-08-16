@@ -56,15 +56,21 @@
 .add-products__action-text {
   max-width: 161px;
   margin: 0;
-  padding: 122px 0 0;
 
   text-align: center;
 
   font-family: $arial;
   line-height: 1.25;
 
-
   color: $white;
+}
+
+.add-products__action-icon {
+  width: 56px;
+  height: 61px;
+  margin: 0 0 61px;
+
+  fill: $white;
 }
 
 @media (min-width: $tablet-width) {
@@ -85,7 +91,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 69px 0 76px;
-    padding: 72px 125px 68px 91px;
+    padding: 72px 124px 68px 91px;
 
     text-align: right;
 
@@ -98,9 +104,11 @@
   }
 
   .add-products__action-text {
-    padding: 0 0 0 331px;
-
     text-align: left;
+  }
+
+  .add-products__action-icon {
+    margin: -14px 0 0;
   }
 }
 
@@ -128,7 +136,7 @@
     flex-direction: column;
     max-width: 245px;
     margin: 0;
-    padding: 44px 42px 42px;
+    padding: 65px 42px 42px;
 
     background-image: url("../img/gift-photo-desktop@1x.jpg");
     background-size: 100% 289px;
@@ -139,8 +147,10 @@
   }
 
   .add-products__action-text {
-    padding: 144px 0 0;
-
     text-align: center;
+  }
+
+  .add-products__action-icon {
+    margin: 0;
   }
 }
