@@ -24,13 +24,13 @@
   background: $white-smoke;
 }
 
-.results_title {
+.results__title {
   font-size: 24px;
   font-weight: normal;
   text-transform: uppercase;
 }
 
-.results_text {
+.results__text {
   margin: 9px 0 0;
 
   font-family: $arial;
@@ -58,12 +58,12 @@
     background: $white;
   }
 
-  .results_title {
+  .results__title {
     font-size: 30px;
     line-height: 1.23;
   }
 
-  .results_text {
+  .results__text {
     margin: 10px 0 0;
 
     font-size: 14px;
