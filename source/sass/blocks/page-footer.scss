@@ -2,6 +2,22 @@
   background: $white-smoke;
 }
 
+.page-footer__map {
+  min-width: 100%;
+  min-height: 400px;
+
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border: none;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+  }
+}
+
 .page-footer__bottom {
   display: flex;
   flex-direction: column;
@@ -51,6 +67,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer__map {
+    background-image: url("../img/bg-map-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
+  }
+
   .page-footer__bottom {
     flex-direction: row;
     align-items: center;
@@ -73,5 +97,13 @@
 @media (min-width: $desktop-width) {
   .page-footer__top {
     position: relative;
+  }
+
+  .page-footer__map {
+    background-image: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
   }
 }
