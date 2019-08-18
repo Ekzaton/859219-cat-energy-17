@@ -1,6 +1,8 @@
 .button {
   display: block;
+  box-sizing: border-box;
   width: 100%;
+  max-height: 40px;
   margin: 0 auto;
   padding: 10px 0;
 
@@ -47,8 +49,6 @@
     line-height: 1.25;
     text-transform: uppercase;
 
-    color: $white;
-
     border: none;
 
     outline: none;
@@ -58,22 +58,22 @@
 
 @media (min-width: $tablet-width) {
   .button {
-    &--promos {
-      width: 245px;
+    &--promos,
+    &--form {
+      max-height: 52px;
       margin: 0;
-      padding: 16px 0;
+      padding: 15px 0 17px;
 
       font-size: 20px;
       line-height: 1;
     }
 
+    &--promos {
+      max-width: 245px;
+    }
+
     &--form {
       max-width: 570px;
-      margin: 0;
-      padding: 17px 0 15px;
-
-      font-size: 20px;
-      line-height: 1;
     }
   }
 }

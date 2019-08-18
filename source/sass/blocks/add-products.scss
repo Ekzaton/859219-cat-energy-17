@@ -44,6 +44,7 @@
   margin: 39px 0 35px;
   padding: 65px 0 42px;
 
+  background-color: $apple;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -96,7 +97,6 @@
     text-align: right;
 
     background-image: url("../img/gift-photo-tablet@1x.jpg");
-    background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
@@ -139,7 +139,6 @@
     padding: 65px 42px 42px;
 
     background-image: url("../img/gift-photo-desktop@1x.jpg");
-    background-size: 100% 289px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/gift-photo-desktop@2x.jpg");

@@ -76,6 +76,8 @@
   }
 
   .promos__list {
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-bottom: 45px;
   }
 }
