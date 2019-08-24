@@ -87,6 +87,10 @@
 
 @media (min-width: $desktop-width) {
   .page-main__title {
+    &--promos {
+      margin-left: 0;
+    }
+
     &--example {
       margin-top: 39px;
       margin-bottom: 146px;
