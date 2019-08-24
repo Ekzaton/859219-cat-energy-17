@@ -23,10 +23,7 @@
 
 .product__title {
   max-width: 100px;
-  margin: 0;
-  padding: 0;
-  margin-top: 21px;
-  margin-bottom: 12px;
+  margin: 21px 0 12px;
 
   font-size: 16px;
   font-weight: normal;
@@ -44,9 +41,7 @@
 
 .product__specs {
   display: table;
-  min-width: 100%;
-  margin: 0;
-  padding: 0;
+  width: 100%;
 
   font-family: $arial;
   font-size: 12px;
@@ -58,7 +53,7 @@
   &--more {
     position: relative;
     display: block;
-    margin-bottom: 21px;
+    margin: 0 auto 21px;
     text-align: center;
 
     &::before {
@@ -118,13 +113,13 @@
   }
 
   .product__specs {
-    margin: 19px auto 33px;
+    margin: 19px 0 33px;
 
     font-size: 16px;
     line-height: 1;
 
     &--more {
-      min-width: 165px;
+      max-width: 167px;
       margin: 28px auto 84px;
 
       line-height: normal;

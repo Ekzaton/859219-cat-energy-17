@@ -7,7 +7,9 @@
 
   border-top: 1px solid $whisper-4;
 
-  &:last-child {
+  &--more {
+    order: 1;
+
     border-bottom: 1px solid $whisper-4;
   }
 }
@@ -28,10 +30,6 @@
       background-color: $white;
 
       border: 1px solid $whisper-1;
-    }
-
-    &:last-child {
-      border-bottom: 1px solid $whisper-1;
     }
   }
 }

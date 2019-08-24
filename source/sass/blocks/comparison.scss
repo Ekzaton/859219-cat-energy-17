@@ -17,18 +17,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 192px;
+  max-width: 202px;
   margin: 0 auto;
-  padding: 30px 0 36px;
+  padding: 31px 0 36px;
 }
 
 .comparison__button {
+  min-width: 41px;
   padding: 0;
 
   font: inherit;
   line-height: 1.25;
   text-transform: uppercase;
+  text-align: right;
   background: transparent;
+
 
   border: none;
 
@@ -37,7 +40,7 @@
 
 .comparison__progress {
   position: relative;
-  width: 84px;
+  width: 82px;
   height: 12px;
 
   background: $white;
@@ -61,7 +64,7 @@
 @media (min-width: $tablet-width) {
   .comparison__images {
     position: relative;
-    max-width: 690px;
+    max-width: 676px;
     height: 517px;
     margin: 0 auto;
   }
@@ -70,7 +73,7 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    width: 345px;
+    width: 338px;
     height: 517px;
     top: 0;
     bottom: 0;
@@ -79,7 +82,8 @@
     overflow: hidden;
 
     &--after {
-      right: 0;
+      width: 352px;
+      right: -14px;
       align-items: flex-end;
     }
 
@@ -90,11 +94,12 @@
   }
 
   .comparison__range {
-    max-width: 570px;
+    min-width: 570px;
     padding: 16px 0 68px;
   }
 
   .comparison__button {
+    min-width: 46px;
     padding: 5px 0 6px;
 
     font-size: 20px;
@@ -115,15 +120,13 @@
   }
 
   .comparison__progress {
-    width: 570px;
+    width: 428px;
     height: 6px;
-    margin: 0 25px;
 
     background: $gainsboro;
 
     border: none;
-
-    cursor: pointer;
+    border-radius: 2.5px;
 
     &::after {
       display: none;
@@ -135,7 +138,7 @@
     width: 32px;
     height: 32px;
     top: -14px;
-    left: 197px;
+    left: 199px;
 
     background: $white;
 
@@ -182,20 +185,21 @@
 
 @media (min-width: $desktop-width) {
   .comparison__images {
-    margin: 0 -80px;
+    max-width: 690px;
+    margin-left: -80px;
   }
 
   .comparison__image {
-    &--before {
-      width: 365px;
-    }
+    width: 365px;
 
     &--after {
       width: 325px;
+      right: -40px;
     }
   }
 
   .comparison__range {
+    text-align: right;
     padding: 36px 0 68px;
   }
 }
